@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop()>130){
+	    $('.top').fadeIn(80);
+	}
+	else{
+	    $('.top').fadeOut(80);
+	}
+    });
+    $('.top').click(function(){
+	$('html,body').animate(
+	    {scrollTop:0},200
+	);
+    });
+});
